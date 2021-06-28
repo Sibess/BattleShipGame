@@ -7,9 +7,9 @@ namespace BattleShip
 	{
 		static void Main(string[] args)
 		{
-			Grid gm = new Grid();
-			string[,] playBoard = gm.PlayGrid();
-			gm.DisplayGrid(playBoard);
+			Grid grid = new Grid();
+			string[,] playBoard = grid.PlayGrid();
+			grid.DisplayGrid(playBoard);
 		}
 	}
 }
