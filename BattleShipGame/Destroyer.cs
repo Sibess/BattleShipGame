@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace BattleShipGame
 {
     public class Destroyer : Ship
@@ -11,9 +8,24 @@ namespace BattleShipGame
             return 2;
         }
 
-        public override int Max()
+        public override int MaximumHorizontalIndex()
         {
-            return 7;
+            return 4;
+        }
+
+        public override int MinimumVerticalIndex()
+        {
+            return 4;
+        }
+
+        public override int MaximumVerticalIndex()
+        {
+            return 6;
+        }
+
+        public override int MinimumHorizontalIndex()
+        {
+            return 3;
         }
 
         public override string Label()

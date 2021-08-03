@@ -1,19 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace BattleShipGame
 {
-   public class Cruiser : Ship
+    public class Cruiser : Ship
     {
         public override int LengthOfShip()
         {
             return 3;
         }
 
-        public override int Max()
+        public override int MaximumHorizontalIndex()
         {
-            return 4;
+            return 3;
+        }
+
+        public override int MinimumVerticalIndex()
+        {
+            return 8;
+        }
+
+        public override int MaximumVerticalIndex()
+        {
+            return 9;
+        }
+
+        public override int MinimumHorizontalIndex()
+        {
+            return 1;
         }
 
         public override string Label()

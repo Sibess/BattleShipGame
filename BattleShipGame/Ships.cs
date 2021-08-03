@@ -7,9 +7,11 @@ namespace BattleShipGame
     public abstract class Ship
     {
         public abstract int LengthOfShip();
-
-        public abstract int Max();
-
+        public abstract int MinimumHorizontalIndex();
+        public abstract int MinimumVerticalIndex();
+        public abstract int MaximumHorizontalIndex();
+        public abstract int MaximumVerticalIndex();
         public abstract string Label();
+
     }
 }
